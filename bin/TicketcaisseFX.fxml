@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button fx:id="btn1" layoutX="60.0" layoutY="431.0" mnemonicParsing="false" onAction="#continuer" text="CONTINUER" textFill="#20201a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="lb2" layoutX="62.0" layoutY="308.0" prefHeight="47.0" prefWidth="59.0" text="    Menu" />
+      <TextField fx:id="txt1" layoutX="150.0" layoutY="319.0" prefHeight="0.0" prefWidth="150.0" />
+      <Label fx:id="lb3" layoutX="77.0" layoutY="356.0" prefHeight="18.0" prefWidth="47.0" text="Quantity" />
+      <Label fx:id="lb4" layoutX="60.0" layoutY="391.0" text="Prix Unitaire" />
+      <TextField fx:id="txt3" layoutX="150.0" layoutY="387.0" />
+      <Button fx:id="btn2" layoutX="175.0" layoutY="431.0" mnemonicParsing="false" onAction="#printbill" prefHeight="26.0" prefWidth="138.0" text="IMPRIMER L'ADDITION">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font>
+      </Button>
+      <ListView fx:id="totlist" blendMode="DARKEN" layoutX="77.0" layoutY="100.0" prefHeight="196.0" prefWidth="208.0" />
+      <Label fx:id="lb1" layoutX="77.0" layoutY="62.0" prefHeight="26.0" prefWidth="230.0" text="MENUS DANS NOTRE RESTAURANT" textFill="#3c62ecde">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tb" layoutX="348.0" layoutY="98.0" prefHeight="200.0" prefWidth="366.0">
+        <columns>
+          <TableColumn fx:id="pid" prefWidth="120.0" text="Menus" />
+          <TableColumn fx:id="qty" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="pu" text="prixunitaire" />
+            <TableColumn fx:id="tp" maxWidth="1.7976931348623157E308" prefWidth="100.0" text="TotalPrix(€)" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbill" layoutX="352.0" layoutY="59.0" prefHeight="38.0" prefWidth="360.0" text="L'Addition de Client">
+         <font>
+            <Font name="Arial Nova Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbnom" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="29.0" prefHeight="18.0" prefWidth="417.0" text="SAMSARA  RESTAURANT-Gastronomie Indiennes">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fntxt" layoutX="588.0" layoutY="302.0" prefHeight="26.0" prefWidth="116.0" />
+      <Label fx:id="fnlb" alignment="CENTER_RIGHT" layoutX="465.0" layoutY="301.0" prefHeight="26.0" prefWidth="122.0" text="PrixTotale" />
+      <Label layoutX="704.0" layoutY="306.0" text="€" />
+      <ComboBox fx:id="combo1" layoutX="152.0" layoutY="352.0" prefHeight="26.0" prefWidth="47.0" promptText="0" visibleRowCount="20" />
+      <TextArea fx:id="txtarea" layoutX="331.0" layoutY="309.0" prefHeight="85.0" prefWidth="200.0" promptText="bill" visible="false" />
+      <TextField fx:id="txtno" layoutX="331.0" layoutY="400.0" prefHeight="26.0" prefWidth="102.0" visible="false" />
+   </children>
+</AnchorPane>
